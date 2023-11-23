@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Início</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="src/img/logo.png" />
+		<link rel="stylesheet" href="/src/style/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<section id="logotipo">
+				<section id="foto-nome">
+					<img src="src/img/logo.png" alt="Logo do site" />
+					<h1 id="nome-restaurante"></h1>
+				</section>
+				<section id="menu">
+					<nav>
+						<a href="index.html" > Início</a>
+						<a href="operacoes.html" >
+							Operações do Restaurante</a
+						>
+						<a href="cardapio.html" > Cardápio</a>
+						<a href="reservas.html" > Reservas</a>
+						<a href="controle.html" >
+							Controle de Pedidos
+						</a>
+					</nav>
+					<button onclick="iniciarInteracao()" class="btn">LOGIN</button>
+				</section>
+			</section>
+		</header>
+		<main class="d-flex flex-column justify-content-center">
+      
+
+      <div class="container">
+        <div class=" container p-5 align-items-center col-12 my-5">
+      <h3 class="text-center">  Eventos do Restaurante</h3>
+        
+          <section>
+            <div>
+            <div class="container">
+            <div id="eventosRestaurante" class="carousel slide w-30" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#eventosRestaurante" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#eventosRestaurante" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#eventosRestaurante" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="src/img/invernoSaboroso.png" class="d-block w-100" alt="Prato de Mandioca">
+
+            </div>
+            <div class="carousel-item">
+            <img src="src/img/semanaMacarrao.png" class="d-block w-100" alt="Prato de Feijoada">
+            <div class="carousel-caption d-none d-md-block">
+
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="src/img/semanaDoce.png" class="d-block w-100" alt="Prato da Casa">
+            <div class="carousel-caption d-none d-md-block">
+
+            </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#eventosRestaurante" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#eventosRestaurante" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            </div>
+            </div>
+            </section
+            <br>
+          <br>
+          <h3 class="text-center">  Pratos da Semana </h3>
+
+          <section>
+          <div>
+          <div class="container">
+          <div id="pratosSemana" class="carousel slide w-30" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+          <button type="button" data-bs-target="#pratosSemana" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#pratosSemana" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#pratosSemana" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+          <img src="src/img/pratoMandioca.png" class="d-block w-100" alt="Prato de Mandioca">
+          
+          </div>
+          <div class="carousel-item">
+          <img src="src/img/feijoada.png" class="d-block w-100" alt="Prato de Feijoada">
+          <div class="carousel-caption d-none d-md-block">
+         
+          </div>
+          </div>
+          <div class="carousel-item">
+          <img src="src/img/blackFriday.png" class="d-block w-100" alt="Prato da Casa">
+          <div class="carousel-caption d-none d-md-block">
+          
+          </div>
+          </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#pratosSemana" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#pratosSemana" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+          </div>
+          </div>
+          </section
+
+
+
+        </div>
+		</main>
+		<footer>
+			<p>
+				Feito por José Elias Gomes Camargo e José Joaquin Julcamoro Bustamante
+			</p>
+
+			<p>Redes Sociais do Restaurante</p>
+			<div class="redes">
+				<a href="https://pt-br.facebook.com/" ="blank">
+					<img src="./src/img/redes/facebook_733547.png" alt="facebook" />
+				</a>
+				<a href="https://pt-br.facebook.com/" ="blank">
+					<img src="./src/img/redes/instagram_2111463.png" alt="Instagram" />
+				</a>
+				<a href="https://pt-br.facebook.com/" ="blank">
+					<img src="./src/img/redes/whatsapp_733585.png" alt="Whatsapp" />
+				</a>
+			</div>
+		</footer>
+		<script src="/src/JS/saudacao.js"></script>
+	</body>
+</html>

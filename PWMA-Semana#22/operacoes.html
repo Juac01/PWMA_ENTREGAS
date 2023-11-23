@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="src/img/logo.png" />
+  <link rel="stylesheet" href="/src/style/style.css">
+  <link rel="stylesheet" href="/src/style/operacoes.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+  <title> Operações </title>
+</head>
+
+<body>
+  <header>
+    <section id="logotipo">
+      <section id="foto-nome">
+        <img src="src/img/logo.png" alt="Logo do site" />
+        <h1 id="nome-restaurante"> </h1>
+      </section>
+      <section id="menu">
+        <nav>
+          <a href="index.html"> Início</a>
+          <a href="operacoes.html">
+            Operações do Restaurante</a>
+          <a href="cardapio.html"> Cardápio</a>
+          <a href="reservas.html"> Reservas</a>
+          <a href="controle.html">
+            Controle de Pedidos
+          </a>
+        </nav>
+        
+      </section>
+    </section>
+  </header>
+
+
+
+  <main class="container-md justify-content-center" >
+    <br>
+    <h1> Cadastro de Funcionários</h1>
+    <form>
+
+      <label for="Nome" class="form-label"> Nome Completo* </label>
+      <input type="text" class="form-control" id="nome">
+
+      <label for="cpf" class="form-label"> CPF* </label>
+      <input type="text" placeholder="111.111.111/11" class="form-control" id="cpf" maxlength="14"
+        onkeyup="handleCPF(event)">
+
+      <div class="form-row">
+        <div class="col">
+
+          <label for="departamento" class="form-label"> Departamento* </label>
+          <select name="departamento" class="form-control" id="departamento">
+            <option selected disabled hidden style='display: none' value=''></option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="data-admissao" class="form-label"> Data de Admissão* </label>
+          <input type="date" class="form-control" id="data-admissao" min="1910-01-01">
+        </div>
+      </div>
+    </form>
+
+    <span class="linha">
+      <button id="btn-incluir" type="submit" onclick="adicionarFuncionario()" class="btn btn-dark"> Incluir</button>
+      <button id="btn-limpar" type="submit" onclick="apagarFuncionarios()" class="btn btn-dark"> Limpar Registros</button>
+
+    </span>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="thead-dark">
+          <th class="align-middle text-center"> Nome Completo </th>
+          <th class="align-middle text-center"> CPF </th>
+          <th class="align-middle text-center" id="campo-departamento"> Departamento </th>
+
+          <th class="align-middle text-center" id="campo-data"> Data de Admissão </th>
+          <th class="align-middle text-center" id="campo-data"> Ações </th>
+
+        </thead>
+        <tbody id="tabela">
+          
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      Feito por José Elias Gomes Camargo e José Joaquin Julcamoro Bustamante
+    </p>
+
+    <p>Redes Sociais do Restaurante</p>
+    <div class="redes">
+      <a href="https://pt-br.facebook.com/"="blank">
+        <img src="./src/img/redes/facebook_733547.png" alt="facebook" />
+      </a>
+      <a href="https://pt-br.facebook.com/"="blank">
+        <img src="./src/img/redes/instagram_2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://pt-br.facebook.com/"="blank">
+        <img src="./src/img/redes/whatsapp_733585.png" alt="Whatsapp" />
+      </a>
+    </div>
+  </footer>
+  <script src="src/JS/operacoes.js"></script>
+    <script src="src/JS/saudacao.js"></script>
+
+</body>
+</body>
+
+</html>

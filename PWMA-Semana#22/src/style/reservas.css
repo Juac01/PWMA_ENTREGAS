@@ -1,0 +1,15 @@
+.mesas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px !important;
+}
+
+.mesa {
+  width: 70px !important;
+  height: 70px;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 20px;
+ background-color: blue;
+}
