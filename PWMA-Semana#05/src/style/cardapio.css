@@ -1,0 +1,59 @@
+#titulo-cardapio {
+    margin: 0;
+    margin-top: 20px;
+}
+
+#descricao-cardapio {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: -40px;
+    margin-bottom: -100px;
+}
+
+#produto {
+    width: 300px;
+    height: 400px;
+    margin: 10px 50px;
+}
+
+#produto #titulo-produto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+
+#produto #foto-produto img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#produto #descricao-produto #preco-produto {
+    color: darkgreen;
+}
+
+
+
+#produto #editar button {
+    width: 80%; 
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+#cardapio {
+    display: flex;
+   flex-wrap: wrap;
+   margin-top: -30px;
+   border: 0;
+    justify-content: space-evenly;
+}

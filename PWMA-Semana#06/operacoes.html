@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="src/img/logo.png" />
+		<link rel="stylesheet" href="src/style/iframe.css" />
+
+		<title>Operações do Restaurante</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 id="operacoes">Operações do Restaurante</h1>
+			<article>
+				Criamos ferramentas para gerenciar os funcionários, patrimônios, lucros
+				e despesas do seu restaurante.
+			</article>
+		</header>
+
+		<main>
+			<section id="despesas-restaurante">
+				<h4>Visualizar Despesas do restaurante</h4>
+				<article>
+					<ul>
+						<li>Fornecedores de suprimentos</li>
+						<!-- SALVAR NO MAPA MENTAL  -->
+						<li>Parcerias</li>
+						<!-- SALVAR NO MAPA MENTAL  -->
+						<li>Equipamento</li>
+					</ul>
+				</article>
+			</section>
+
+			<section id="cadastro-restaurante">
+				<form action="">
+					<h2>Cadastrar Funcionário</h2>
+					<label> Nome: </label>
+					<input type="text" />
+					<label>Departamento: </label>
+					<input list="departamentos" />
+					<datalist id="departamentos">
+						<option value="RH" />
+						<option value="Fincanceiro" />
+						<option value="Gestão" />
+						<option value="Cozinha" />
+						<option value="Atendimento ao Cliente" />
+					</datalist>
+					<br />
+					<br />
+					<label for=""> Data de Admissão: </label>
+					<input type="date" />
+					<button>Enviar</button>
+				</form>
+			</section>
+
+			<section id="suporte-restaurante">
+				<form action="">
+					<h2>Suporte Técnico</h2>
+					<div>
+						<input
+							id="input-suporte"
+							type="text"
+							placeholder="Descreva seu problema"
+							size="500"
+							class="texto-vermelho"
+						/>
+					</div>
+
+					<button>Enviar</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

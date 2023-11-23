@@ -1,0 +1,134 @@
+header {
+    background-color: salmon;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 10px 20px;
+}
+
+
+header #logotipo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20 auto;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    border: solid 1px black;
+    justify-content: space-between;
+
+}
+
+header #logotipo #foto-nome {
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+header #logotipo #menu {
+    display: inline-flex;
+    height: fit-content;
+    margin-right: 20px;
+    align-items: center;
+}
+
+header #logotipo h1 {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+
+}
+
+header #logotipo img {
+    width: 175px;
+}
+
+header #logotipo button {  
+    margin: 10px;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(34, 33, 33);
+    color: white;
+}
+
+header #logotipo button:hover {  
+    box-shadow: 1px 1px 1px 1px white;
+}
+
+header #logotipo nav {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header #logotipo nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+header #logotipo nav a:hover {
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0px 4px 0px rgba(0,0,0,0.25);
+
+}
+
+header hr {
+    height: 2px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-color: rgb(15, 11, 11);
+}
+
+body {
+    border: solid 1px black;
+    /*Aumentamos 10% width do bady principal para corregir as lineas da caixa*/
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    height: 700px;
+    background-color: snow;
+    flex-wrap: wrap;
+    
+}
+
+main #resultado {
+    margin-left: 40px;
+}
+
+main iframe {
+    display: flex;
+    width: 100%;
+    height: 98%;
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: salmon;
+    height: 150px;
+    bottom: 0;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.redes img {
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+}

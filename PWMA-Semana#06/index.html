@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Gestaurante</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="src/img/logo.png" />
+	<link rel="stylesheet" href="src/style/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,500&display=swap"
+		rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<section id="logotipo">
+			<section id="foto-nome">
+				<img src="src/img/logo.png" alt="Logo do site" />
+				<h1>Nome do seu Restaurante</h1>
+			</section>
+			<section id="menu">
+				<nav>
+					<a href="abertura.html" target="centro"> Início</a> 
+					<a href="operacoes.html" target="centro"> Operações do Restaurante</a> 
+					<a href="cardapio.html" target="centro"> Cardápio</a>
+					<a href="reservas.html" target="centro"> Reservas</a> 
+					<a href="controle.html" target="centro"> Controle de Pedidos </a>
+				</nav>
+				<button onclick="iniciarInteracao()"> LOGIN </button>
+			</section>
+
+		</section>
+
+	</header>
+
+	<main>
+		<section id="resultado">
+			<p>Olá! </p>
+		</section>
+		<iframe name="centro" src="abertura.html" frameborder="0"></iframe>
+	</main>
+	<footer>
+		<p>
+			Feito por José Elias Gomes Camargo e José Joaquin Julcamoro Bustamante
+		</p>
+
+		<p>Redes Sociais do Restaurante</p>
+		<div class="redes">
+			<a href="https://pt-br.facebook.com/" target="_blank">
+				<img src="./src/img/redes/facebook_733547.png" alt="facebook" />
+			</a>
+			<a href="https://pt-br.facebook.com/" target="_blank">
+				<img src="./src/img/redes/instagram_2111463.png" alt="Instagram" />
+			</a>
+			<a href="https://pt-br.facebook.com/" target="_blank">
+				<img src="./src/img/redes/whatsapp_733585.png" alt="Whatsapp" />
+			</a>
+		</div>
+	</footer>
+
+	<script>
+		function iniciarInteracao() {
+			let nome = window.prompt('Qual é o seu nome?')
+			let res = window.document.getElementById('resultado')
+
+			res.innerHTML = `<p>Olá, <strong>${nome}</strong>! Bem vindo ao Gestaurante! &#x1F37A;`
+		}
+	</script>
+</body>
+
+</html>

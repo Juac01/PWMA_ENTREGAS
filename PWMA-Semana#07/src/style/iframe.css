@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    /*Tiramos o heigth para ajustar a rolagem adequada*/
+    justify-content: space-evenly;
+    background-color: snow;
+    flex-wrap: wrap;
+    font-family: 'Roboto', sans-serif;
+}
+
+body section {
+    border: solid 1px black;
+    padding: 50px;
+    margin: 10px;
+
+    /*Tiramos o heigth para ajustar a rolagem adequada*/
+}
+
+header {
+
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+
+}
+
+
+header article {
+    font-size: 16px;
+    margin: 10px;
+
+    text-align: center;
+}
+
+
+#introducao-restaurante {
+    width: 90%;
+    justify-content: space-between;
+    height: 590px;
+    display: flex;
+}
+
+#suporte-restaurante form button {
+    margin-top: 10px;
+
+}
+
+#input-suporte {
+
+    background-color: salmon;
+    height: 100px;
+    width: 90%;
+
+}

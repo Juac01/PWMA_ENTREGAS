@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="src/img/logo.png" />
+		<link rel="stylesheet" href="src/style/iframe.css" />
+		<link rel="stylesheet" href="./src/style/operacoes.css">
+		<title>Operações do Restaurante</title>
+	</head>
+	<body>
+		<header>
+			<h1 id="operacoes">Operações do Restaurante</h1>
+			<article>
+				Criamos ferramentas para gerenciar os funcionários, patrimônios, lucros
+				e despesas do seu restaurante.
+			</article>
+		</header>
+
+		<main>
+			<section id="despesas-restaurante">
+				<h4>Visualizar Despesas do restaurante</h4>
+				
+					<button id="but01">Fornecedores de suprimentos</button>
+
+					<button id="but02">Parcerias</button>
+
+					<button id="but03">Equipamento</button>
+				
+			</section>
+
+			<section id="cadastro-restaurante">
+				<form>
+					<h2>Cadastrar Funcionário</h2>
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" />
+					<label for="departamento">Departamento:</label>
+					<input list="departamentos" id="departamento" />
+					<datalist id="departamentos">
+						<option value="RH"></option>
+						<option value="Financeiro"></option>
+						<option value="Gestão"></option>
+						<option value="Cozinha"></option>
+						<option value="Atendimento ao Cliente"></option>
+					</datalist>
+
+					<br /><br />
+					<label for="data">Data de Admissão:</label>
+					<input type="date" id="data" /><br />
+
+					<button type="button" onclick="criarFuncionario()">Salvar</button>
+					<br /><br /><br />
+					<label><h1>Exibir Funcionários</h1> </label>
+					<div id="divLista">
+						<ul id="list"></ul>
+					</div>
+				</form>
+			</section>
+			<script>
+				// Array para armazenar os funcionários
+				const listaFuncionarios = [];
+
+				function criarFuncionario() {
+					// Valores de entrada
+					const nomeFuncionario = document.getElementById("nome").value;
+					const departamentoFuncionario =
+						document.getElementById("departamento").value;
+					const dataAdmissaoFuncionario = document.getElementById("data").value;
+
+					const funcionario = `<strong>Nome: </strong> ${nomeFuncionario} | <strong> Departamento: </strong> ${departamentoFuncionario} | <strong> Data de Admissão: </strong> ${dataAdmissaoFuncionario}`;
+
+					listaFuncionarios.push(funcionario);
+					
+
+					document.getElementById("nome").value = "";
+					document.getElementById("departamento").value = "";
+					document.getElementById("data").value = "";
+
+					exibirFuncionarios();
+				}
+
+				function exibirFuncionarios() {
+					// Lista de funcionários
+					const ulFuncionarios = document.getElementById("list");
+
+					// Limpar a lista atual
+					ulFuncionarios.innerHTML = "";
+
+					// Adicionar cada funcionário à lista
+					for (const funcionario of listaFuncionarios) {
+						const li = document.createElement("li");
+						li.innerHTML = funcionario;
+						const button = document.createElement("button")
+
+						button.onclick = function remove(){
+							ulFuncionarios.removeChild(li)
+							console.log(listaFuncionarios.indexOf(funcionario))
+
+							listaFuncionarios.splice(listaFuncionarios.indexOf(funcionario), 1)
+						};
+
+						button.innerText = button.textContent = 'X';
+						button.style.marginLeft = "10px";
+						button.style.backgroundColor = "white"
+						button.style.borderRadius = "10px"
+						button.style.fontWeight = "bold"
+						li.appendChild(button)
+						li.style.marginBottom = "15px"
+						ulFuncionarios.appendChild(li);
+
+					}
+				}
+			</script>
+
+			<section id="suporte-restaurante">
+				<form action="">
+					<h2>Suporte Técnico</h2>
+					<div>
+						<input
+							id="input-suporte"
+							type="text"
+							placeholder="Descreva seu problema"
+							size="500"
+							class="texto-vermelho"
+						/>
+					</div>
+
+					<button>Enviar</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

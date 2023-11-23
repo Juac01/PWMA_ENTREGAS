@@ -1,0 +1,17 @@
+#despesas-restaurante {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;;
+}
+
+#but01 {
+    text-align: left;
+}
+
+#but02 {
+    text-align: center;
+}
+
+#but03 {
+    text-align: right;
+}
